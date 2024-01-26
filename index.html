@@ -42,8 +42,8 @@
     </script>
     <title>Hockey Club</title>
 </head>
-<body class="font-manrope mx-auto lg:mx-10">
-    <header>
+<body class="font-manrope ">
+    <header class="mx-auto lg:mx-28">
         <!--nav bar-->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -99,9 +99,8 @@
                 </div>
             </div>
         </div>
-        <div class="bg-neutral text-slate-300 static w-full border-none rounded-2xl p-5 flex flex-col 
-        lg:flex-col lg:w-1/4 
-                    lg:absolute lg:bottom-1 lg:right-20 ">
+        <div class="bg-neutral text-slate-300 static w-full border-none rounded-2xl p-5 flex flex-col lg:w-1/4 
+                    lg:absolute left-5 right-5 top-3/4 ">
             <h4 class="text-xl">Meet All The Heroes</h4>
             <p class="text-xs  font-thin">Meet your favorite team. Meet the star player whoever you <br>
                 like. Join with us now.
@@ -109,7 +108,7 @@
         </div>
     </header>
 
-    <main class="my-28">
+    <main class="my-28 mx-auto lg:mx-28">
         <hr class="border-1 border-dashed font-extralight text-black my-5 w-full">
         <section class="flex flex-col items-center text-center">
             <h3 class="text-2xl font-extrabold my-3">Professional Hockeys Club</h3>
@@ -414,7 +413,7 @@
         </section>
 
         <!--Questions Section -->
-        <section class="my-4 flex flex-col gap-5 ">
+        <section class="my-6 flex flex-col gap-4 ">
             <hr class="border-1 border-dashed font-extralight text-black my-5 w-full">
             <div class="flex flex-col justify-center gap-2 items-center text-center">
                 <h3 class="text-2xl font-extrabold my-3">Clients Questions</h3>
@@ -489,19 +488,115 @@
             </div>
         </section>
 <!--Form-section-->
-        <section class="my-4 flex flex-col gap-5 ">
-            <hr class="border-1 border-dashed font-extralight text-black my-5 w-full">
+        <section class="my-4 flex flex-col  gap-5 ">
+            <hr class="border-1 border-dashed font-extralight text-black my-3 w-full">
             <div class="flex flex-col justify-center gap-2 items-center text-center">
                 <h3 class="text-2xl font-extrabold my-3">Get In Touch</h3>
                 <p class="text-xs  font-thin text-slate-800">Please sing up with email to keep updated about <br>
                    our information. </p>
             </div>
             <hr class="border-1 border-dashed font-extralight text-black my-5 w-full">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 p-3 ">
+                <div class="flex flex-col gap-3 border border-gray-300 rounded-2xl p-6">
+                    <div class="flex flex-col gap-2 border-none rounded-2xl bg-lime-100 p-8">
+                        <img class="w-11 h-11" src="Images/Group 1171275317.png" alt="">
+                        <p class="text-xs  font-thin text-slate-800">Phone Number</p>
+                        <p>(+62) 123-321-543</p>
+                    </div>
+                    <div class="flex flex-col gap-2 border-none rounded-2xl bg-yellow-100 p-8">
+                        <img class="w-11 h-11" src="Images/Group 1171275318.png" alt="">
+                        <p class="text-xs  font-thin text-slate-800">Email</p>
+                        <p>hockeys@mail.com</p>
+                    </div>
+                    <div class="flex flex-col gap-2 border-none rounded-2xl bg-blue-100 p-8">
+                        <img class="w-11 h-11" src="Images/Group 1171275321.png" alt="">
+                        <p class="text-xs  font-thin text-slate-800">Location</p>
+                        <p>12 no. Becker street, London.</p>
+                    </div>
+                </div>
+               <form class="w-full lg:col-span-2 " action="">
+                <div class="grid grid-cols-1 grid-flow-row  lg:grid-cols-2  gap-4 flex-1 p-4">
+                    <div class="flex flex-col gap-2 ">
+                        <p class="text-sm  font-bold text-slate-800">Your Name</p>
+                        <input class="p-4 w-full border-none rounded text-xs bg-slate-200 text-slate-500 font-light" 
+                        type="text" placeholder="Enter Your Full Name">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm  font-bold text-slate-800">Your Email</p>
+                        <input class="p-4 w-full border-none rounded text-xs bg-slate-200 text-slate-500 font-light" type="text"
+                            placeholder="Enter Your Email">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm  font-bold text-slate-800">Subject</p>
+                        <input class="p-4 w-full border-none rounded text-xs bg-slate-200 text-slate-500 font-light" type="text"
+                            placeholder="Enter Your Subject">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm  font-bold text-slate-800">Phone Number</p>
+                        <input class="p-4 w-full border-none rounded text-xs bg-slate-200 text-slate-500 font-light" type="text"
+                            placeholder="Enter Your Phone Number">
+                    </div>
+                    <div class="flex flex-col gap-2 row-span-3 lg:col-span-2  ">
+                        <p class="text-sm  font-bold text-slate-800">Message</p>
+                       
+                        <textarea class="p-4 w-full border-none rounded text-xs bg-slate-200 text-slate-500 font-light" type="text"
+                            placeholder="Write Your Message" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="lg:col-span-2">
+                    <button class="btn bg-FF4240 w-full text-white border-0 ">Send Message</button>
+                    </div>
+                </div>
+               </form>
+            </div>
+            <div class="w-full bg-slate-100 border-0 rounded-xl flex justify-center items-center gap-4 p-10">
+                <i class="fa-brands fa-facebook text-slate-800"></i>
+                <i class="fa-brands fa-twitter text-slate-800"></i>
+                <i class="fa-brands fa-instagram text-slate-800"></i>
+                <i class="fa-brands fa-github text-slate-800"></i>
+            </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="w-full p-20 bg-slate-800 text-white text-center lg:text-start flex flex-col lg:flex-row gap-16">
+    <div class="flex flex-col gap-3  lg:mx-3">
+        <p class="text-2xl font-extrabold my-2">Get In Touch</p>
+        <p class="text-xs  font-extralight">Please sing up with email to keep updated about <br>
+            our information. You contact us directly through <br>following contact no. and email.  </p>
+        <div class="flex gap-2 justify-center lg:justify-start items-center">
+            <i class="fa-regular fa-message text-FF4240"></i>
+            <p class="text-xs  font-light">hockeys@mail.com</p>
+        </div>
+        <div class="flex gap-2 justify-center lg:justify-start items-center">
+           <i class="fa-solid fa-phone text-FF4240"></i>
+            <p class="text-xs  font-light">(+62) 123-321-543</p>
+        </div>
+    </div>
+        <div class="w-full lg:w-2/3 grid grid-cols-2 lg:grid-cols-3 gap-6 text-slate-300">
+            <div class="flex flex-col gap-1">
+                <p class="font-extrabold text-lg">Company</p>
+                <p class="text-xs font-thin">About us</p>
+                <p class="text-xs font-thin">Leadership</p>
+                <p class="text-xs font-thin">Careers</p>
+                <p class="text-xs font-thin">News & Articles</p>
+                <p class="text-xs font-thin">Legal Notice</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <p class="font-extrabold text-lg">Support</p>
+                <p class="text-xs font-thin">Help Center</p>
+                <p class="text-xs font-thin">FAQ</p>
+                <p class="text-xs font-thin">Ticket Support</p>
+                <p class="text-xs font-thin">Contact us</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <p class="font-extrabold text-lg">Services</p>
+                <p class="text-xs font-thin">Academy</p>
+                <p class="text-xs font-thin">Group Lesson</p>
+                <p class="text-xs font-thin">Private Lesson</p>
+                <p class="text-xs font-thin">Hockey for Kids</p>
+                <p class="text-xs font-thin">Hockey for Adults</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
